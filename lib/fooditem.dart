@@ -3,16 +3,16 @@ import 'detailspage.dart';
 
 
 class BuildFoodItem extends StatelessWidget {
-
+   final String imgpath;
+   final String foodname;
+   final String price;
   BuildFoodItem({@required this.imgpath, @required this.foodname ,@required this.price});
-   String imgpath;
-   String foodname;
-   String price;
+   
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 10.0 , right: 10.0 , left: 10.0),
+      padding: const EdgeInsets.only(top: 10.0 , right: 10.0 , left: 10.0),
       child: InkWell(
         onTap: () {
           Navigator.of(context).push(MaterialPageRoute(
